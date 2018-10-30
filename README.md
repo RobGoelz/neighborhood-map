@@ -1,4 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FEND MyReads Project (Project 6)
+===============================
+## Table of Contents
+
+* [Running](#running)
+* [Contribute!](#contributing)
+* [Attributions](#attributions)
+* [Contents](#contents)
+
+### Running
+
+Running this project locally requires NPM be installed on your machine. More details on how to install NPM can be found on the [Official NPM Website](https://docs.npmjs.com/getting-started/installing-node)
+
+To get started, git clone or download and extract the zipped repo folder [from here](https://github.com/RobGoelz/myReads).
+
+Once you are the project folder, and have NPM installed, you can:
+
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
+
+This will open a local server with a message like the following:
+
+```
+Compiled successfully!
+The app is running at:
+  http://localhost:3000/
+```
+Navigating to the localhost URL will allow you to view and interact with the website.
+
+## Contributing
+
+This repository is a fork of the the starter template for the final assessment project for Udacity's React Fundamentals course. Students were provided a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. This code is used by _all_ Udacity students
+
+You are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project. The original Udacity starter code for this project without my changes can also be [found here](https://github.com/udacity/reactnd-project-myreads-starter)
+
+I have heavily modified the App.js file, separating out components into individual .JS files for modularity and compartmentalization of components. This is per the recommendations of Doug Brown's walthrough for this project, which is in the attributions section below.
+
+I welcome constructive criticism or help to make this program better! For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Attributions
+* [TylerMcGinnis React BootCamp- April 2018](https://www.youtube.com/playlist?list=PLr-qxVPM5Sc6xYYjPskP5Bn_TIuvFrkeS)
+* [Doug Brown's YouTube Walkthrough - Proj 6 ](https://www.youtube.com/watch?v=OcL7-7cRpkQ&feature=youtu.be)
+(lots of carry over into Proj 7)
+* [Doug Brown's YouTube Walkthrough - Proj 7 ](https://www.youtube.com/watch?v=NVAVLCJwAAo&feature=youtu.be)
+(lots of carry over into Proj 7)
+* [Google Maps API Course](https://www.udacity.com/course/google-maps-apis--ud864)
+* [Crossed Rifle Favicon](https://myelitedetail.us/clipart/rifle-clipart-musket_1461157.html)
+* [Closing Tags in ReactJS](https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs)
+
+
+### Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Available Scripts
 
