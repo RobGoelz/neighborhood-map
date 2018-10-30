@@ -19,5 +19,5 @@ class Container extends Component {
 }
 
 export default GoogleApiComponent({
-  apiKey: 'AIzaSyAVNvPvtksWMshnL2fa-5sszYkaircUZWI'
+  apiKey: ''
 })(Container)
