@@ -58,7 +58,7 @@ I welcome constructive criticism or help to make this program better! For detail
 │   ├── manifest.json # Provided with Create React App.
 │   └── index.html # DO NOT MODIFY
 └── src
-    ├── App.css # Styles for this app, initial content from [ud864](https://www.udacity.com/course/google-maps-apis--ud864)
+    ├── App.css # Styles for this app, initial content from ud864 - see attributions
     ├── App.js # This is the root of the app.
     ├── App.test.js # Used for testing. Provided with Create React App.
     └── components # Separate folder for React component separation
