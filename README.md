@@ -61,9 +61,8 @@ I welcome constructive criticism or help to make this program better! For detail
     ├── App.js # This is the root of the app.
     ├── App.test.js # Used for testing. Provided with Create React App.
     └── components # Separate folder for React component separation
-    │   ├── Container.js # Component containing rendering for Map component
+    │   ├── Container.js # Component used for loading Google API
     │   ├── Options.js # Component containing map modification options
-    │   ├── Container.js # Component containing rendering for Map component
     ├── index.css # Global styles. You may change if you wish.
     └── index.js # You should not need to modify this file; it is used for DOM rendering only.
     └── serviceWorker.js # Provided with Create React App.

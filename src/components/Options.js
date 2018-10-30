@@ -48,7 +48,7 @@ class Options extends Component {
         </div>
         <div id="map"></div>
       </div>
-    )
+    );
     }
 }
 
