@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import locations from './data/locations.json'
+import locations from './data/venues.json'
 import Map from './components/Map'
 
 class App extends Component {
