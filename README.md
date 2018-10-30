@@ -48,6 +48,27 @@ I welcome constructive criticism or help to make this program better! For detail
 * [Favicon Generator](https://www.favicongenerator.com/)
 * [Closing Tags in ReactJS](https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs)
 
+## Contents
+```bash
+├── README.md - This file.
+├── CONTRIBUTING.md - File containing information on project contribution.
+├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
+├── public
+│   ├── favicon.ico # Project icon - crossed muskets for Morgantown!
+│   ├── manifest.json # Provided with Create React App.
+│   └── index.html # DO NOT MODIFY
+└── src
+    ├── App.css # Styles for this app, initial content from [ud864](https://www.udacity.com/course/google-maps-apis--ud864)
+    ├── App.js # This is the root of the app.
+    ├── App.test.js # Used for testing. Provided with Create React App.
+    └── components # Separate folder for React component separation
+    │   ├── Container.js # Component containing rendering for Map component
+    │   ├── Options.js # Component containing map modification options
+    │   ├── Container.js # Component containing rendering for Map component
+    ├── index.css # Global styles. You may change if you wish.
+    └── index.js # You should not need to modify this file; it is used for DOM rendering only.
+    └── serviceWorker.js # Provided with Create React App.
+```
 
 ### Create React App
 
