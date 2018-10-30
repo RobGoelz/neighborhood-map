@@ -1,4 +1,4 @@
-{
+[
   {
     "name": "Table 9",
     "street": "40 Donley St",
@@ -61,5 +61,5 @@
     "zip": "26505",
     "url": "http://hillandhollowwv.com/",
     "pos": {"lat":39.6414678,"lng":-79.9649977}
-  },
-}
+  }
+]
