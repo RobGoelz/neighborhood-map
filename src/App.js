@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import locations from './data/venues.json'
-import Map from './components/Map'
+import MapDisplay from './components/MapDisplay'
 
 class App extends Component {
   state = {
@@ -18,7 +18,7 @@ class App extends Component {
         <h1>
           Morgantown Spots!
         </h1>
-        <Map
+        <MapDisplay
           lat={this.state.lat}
           lon={this.state.lon}
           zoom={this.state.zoom}
