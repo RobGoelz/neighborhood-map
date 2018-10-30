@@ -1,0 +1,65 @@
+{
+  {
+    "name": "Table 9",
+    "street": "40 Donley St",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26501",
+    "url": "http://dinetable9.com/",
+    "pos": {"lat":39.6260116,"lng":-79.963382}
+  },
+  {
+    "name": "Mountain State Brewing Co.",
+    "street": "54 Clay St",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26501",
+    "url": "http://mountainstatebrewing.com/",
+    "pos": {"lat":39.6273572,"lng":-79.9615597}
+  },
+  {
+    "name": "Morgantown Brewing Company",
+    "street": "1291 University Ave",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26505",
+    "url": "https://morgantownbrewing.com/#/",
+    "pos": {"lat":39.630501,"lng":-79.9602507}
+  },
+  {
+    "name": "Apothecary Ale House & Cafe",
+    "street": "227 Chestnut St",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26505",
+    "url": "https://www.facebook.com/ApothecaryAleHouseCafe/",
+    "pos": {"lat":39.6297472,"lng":-79.959645}
+  },
+  {
+    "name": "Tin 202",
+    "street": "202 High St",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26505",
+    "url": "http://www.tin202.com/",
+    "pos": {"lat":39.628807,"lng":-79.9587193}
+  },
+  {
+    "name": "Iron Horse Tavern",
+    "street": "140 High St",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26505",
+    "url": "http://ironhorsetvrn.com/",
+    "pos": {"lat":39.628268,"lng":-79.9590647}
+  },
+  {
+    "name": "Hill and Hollow",
+    "street": "709 Beechurst Ave #10",
+    "city": "Morgantown",
+    "state": "WV",
+    "zip": "26505",
+    "url": "http://hillandhollowwv.com/",
+    "pos": {"lat":39.6414678,"lng":-79.9649977}
+  },
+}
