@@ -46,6 +46,7 @@ I welcome constructive criticism or help to make this program better! For detail
 * [Crossed Rifle Favicon](https://myelitedetail.us/clipart/rifle-clipart-musket_1461157.html)
 * [Favicon Generator](https://www.favicongenerator.com/)
 * [Closing Tags in ReactJS](https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs)
+* [JSON Parser](http://json.parser.online.fr/)
 
 ## Contents
 ```bash
