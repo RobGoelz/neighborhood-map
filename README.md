@@ -45,6 +45,7 @@ I welcome constructive criticism or help to make this program better! For detail
 (lots of carry over into Proj 7)
 * [Google Maps API Course](https://www.udacity.com/course/google-maps-apis--ud864)
 * [Crossed Rifle Favicon](https://myelitedetail.us/clipart/rifle-clipart-musket_1461157.html)
+* [Favicon Generator](https://www.favicongenerator.com/)
 * [Closing Tags in ReactJS](https://stackoverflow.com/questions/30852751/expected-corresponding-jsx-closing-tag-for-input-reactjs)
 
 
