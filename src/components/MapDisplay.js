@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import {Map, InfoWindow, GoogleApiWrapper} from 'google-maps-react';
 import apikey from '../data/apikey.json'
+import foursquare from '../data/foursquare.json'
 
 
 const MAP_KEY = apikey.key;
+const FS_CLIENT = foursquare.clientID;
+const FS_SECRET = foursquare.clientSecret;
 const snazzyMapStyles = require("../data/snazzyMapStyles.json");
 
 class MapDisplay extends Component {
