@@ -7,6 +7,7 @@ import foursquare from '../data/foursquare.json'
 const MAP_KEY = apikey.key;
 const FS_CLIENT = foursquare.clientID;
 const FS_SECRET = foursquare.clientSecret;
+const FS_VERSION = "20180323";
 const snazzyMapStyles = require("../data/snazzyMapStyles.json");
 
 class MapDisplay extends Component {
