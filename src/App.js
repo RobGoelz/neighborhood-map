@@ -8,7 +8,6 @@ class App extends Component {
     lat: 39.629526,
     lon: -79.955897,
     zoom: 13,
-    styles: './App.css',
     all: locations
   }
 
