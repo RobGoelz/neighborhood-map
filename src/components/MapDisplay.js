@@ -35,11 +35,61 @@ class MapDisplay extends Component {
       activeMarkerProps: null});
   }
 
+  getBusinessInfo = (props, data) => {
+    // this looks for matching data in FourSquare for the location/venues
+    // compared to what we already have
+    return data.response.venues.filter(item => item.name.includes(props.name) ||
+    props.name.includes(item.name));
+  }
+
   onMarkerClick = (props, marker, e) => {
+    // closes any infowindow already open
     this.closeInfoWindow();
 
-    this.setState({showingInfoWindow: true, activeMarker: marker,
-      activeMarkerProps: props});
+    // section sets variables for use in getting FS data
+    let url= `https://api.foursquare.com/v2/venues/search?client_id=${FS_CLIENT}&client_secret=${FS_SECRET}&v=${FS_VERSION}&radius=100&ll=${props.position.lat},${props.position.lng}&llAcc=100`;
+    let headers = new Headers();
+    let request = new Request(url, {
+      method: 'GET',
+      headers
+    });
+
+    // create props for the activeMarker
+    let activeMarkerProps;
+    fetch(request)
+      .then(response => response.json())
+      .then(result => {
+        // get the business reference for the info we want from the FS API,
+        // then return
+        let spot = this.getBusinessInfo(props, result);
+        activeMarkerProps = {
+          ...props,
+          foursquare: spot[0]
+        };
+
+        // gets the images for the businss from FS data if Available
+        // if not, just finish setting state with the data we have
+        if (activeMarkerProps.foursquare) {
+          let url = `https://api.foursquare.com/v2/venues/${spot[0].id}/photos?client_id=${FS_CLIENT}&client_secret=${FS_SECRET}&v=${FS_VERSION}`;
+          fetch(url)
+            .then(response => response.json())
+            .then (result => {
+              activeMarkerProps = {
+                ...activeMarkerProps,
+                images: result.response.photos
+              };
+              if (this.state.activeMarker)
+                  this.state.activeMarker.setAnimation(null);
+              marker.setAnimation(this.props.google.maps.Animation.BOUNCE);
+              this.setState({showingInfoWindow: true, activeMarker: marker,
+              activeMarkerProps});
+            })
+        } else {
+          marker.setAnimation(this.props.google.maps.Animation.BOUNCE);
+          this.setState({showingInfoWindow: true, activeMarker: marker,
+          activeMarkerProps});
+        }
+      })
   }
 
   updateMarkers = (locations) => {
@@ -108,6 +158,15 @@ class MapDisplay extends Component {
                 ? (
                   <a href={activeMProps.url}>See website</a>
                 ) : ""}
+              {activeMProps && activeMProps.images
+                ? (
+                  <div><img
+                    alt={activeMProps.name + " venue picture"}
+                    src={activeMProps.images.items[0].prefix + "100x100" + activeMProps.images.items[0].suffix}/>
+                    <p>Image from FourSquare</p>
+                  </div>
+                ) : ""
+              }
             </div>
           </InfoWindow>
       </Map>

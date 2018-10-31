@@ -24,7 +24,7 @@
     "state": "WV",
     "zip": "26505",
     "url": "https://morgantownbrewing.com/#/",
-    "pos": {"lat":39.630501,"lng":-79.9602507}
+    "pos": {"lat":39.630648,"lng":-79.958068}
   },
   {
     "name": "Apothecary Ale House & Cafe",
@@ -33,7 +33,7 @@
     "state": "WV",
     "zip": "26505",
     "url": "https://www.facebook.com/ApothecaryAleHouseCafe/",
-    "pos": {"lat":39.6297472,"lng":-79.959645}
+    "pos": {"lat":39.629867,"lng":-79.957451}
   },
   {
     "name": "Tin 202",
@@ -42,7 +42,7 @@
     "state": "WV",
     "zip": "26505",
     "url": "http://www.tin202.com/",
-    "pos": {"lat":39.628807,"lng":-79.9587193}
+    "pos": {"lat":39.628807,"lng":-79.9576249}
   },
   {
     "name": "Iron Horse Tavern",
@@ -51,7 +51,7 @@
     "state": "WV",
     "zip": "26505",
     "url": "http://ironhorsetvrn.com/",
-    "pos": {"lat":39.628268,"lng":-79.9590647}
+    "pos": {"lat":39.628268,"lng":-79.9579703}
   },
   {
     "name": "Hill and Hollow",
@@ -60,6 +60,6 @@
     "state": "WV",
     "zip": "26505",
     "url": "http://hillandhollowwv.com/",
-    "pos": {"lat":39.6414678,"lng":-79.9649977}
+    "pos": {"lat":39.641724,"lng":-79.962788}
   }
 ]
