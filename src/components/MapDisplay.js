@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import {Map, InfoWindow, GoogleApiWrapper} from 'google-maps-react';
 import apikey from '../data/apikey.json'
 import foursquare from '../data/foursquare.json'
-import Options from './Options'
-
 
 const MAP_KEY = apikey.key;
 const FS_CLIENT = foursquare.clientID;
@@ -22,6 +20,31 @@ class MapDisplay extends Component {
   }
 
   componentDidMount = () => {
+  }
+
+  componentWillReceiveProps = (props) => {
+    this.setState({firstDrop: false});
+
+    // change in the number of locations, update markers
+    if (this.state.markers.length !== props.locations.length) {
+      this.closeInfoWindow();
+      this.updateMarkers(props.locations);
+      this.setState({activeMarker: null});
+
+      return;
+    }
+
+    // selected item is not the same as active marker, so close infowindow
+    if (!props.selectedIndex || (this.state.activeMarker &&
+    (this.state.markers[props.selectedIndex] !== this.state.activeMarker))) {
+      this.closeInfoWindow();
+    }
+
+    // make sure there's an index selected, or quit
+    if (props.selectedIndex === null ||
+       typeof(props.selectedIndex) === "undefined") {
+      return;
+    };
   }
 
   mapReady = (props, map) => {
@@ -133,6 +156,7 @@ class MapDisplay extends Component {
   }
 
   render = () => {
+
     const center = {
       lat: this.props.lat,
       lng: this.props.lon

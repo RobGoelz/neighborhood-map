@@ -1,45 +1,78 @@
 import React, {Component} from 'react';
+import Drawer from '@material-ui/core/Drawer'
 
-class Options extends Component {
-  render () {
-    return (
-      <div className='container'>
-        <div className='options-box'>
-        <h1>Find Your Morgantown Spot!</h1>
-          <div>
-            <input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!" />
-            <input id="zoom-to-area" type="button" value="Zoom" />
-          </div>
-        <hr />
-          <div>
-            <span className="text"> Within </span>
-            <select id="max-duration">
-              <option value="10">10 min</option>
-              <option value="15">15 min</option>
-              <option value="30">30 min</option>
-              <option value="60">1 hour</option>
-            </select>
-            <select id="mode">
-              <option value="DRIVING">drive</option>
-              <option value="WALKING">walk</option>
-              <option value="BICYCLING">bike</option>
-              <option value="TRANSIT">transit ride</option>
-            </select>
-            <span className="text">of</span>
-            <input id="search-within-time-text" type="text" placeholder="Ex: WVU: W Virginia Ave, Morgantown, WV 26501" />
-            <input id="search-within-time" type="button" value="Go" />
-          </div>
-        <hr />
-          <div>
-            <span className="text">Search for nearby bars</span>
-            <input id="places-search" type="text" placeholder="Ex: Irish pub" />
-            <input id="go-places" type="button" value="Go" />
-          </div>
-        </div>
-        <div id="map"></div>
-      </div>
-    );
+class Filter extends Component {
+
+  state = {
+    open: false,
+    query: ""
+  }
+
+  styles = {
+    list: {
+      width: "250px",
+      padding: "0px 15px 0px"
+    },
+    noBullets: {
+      listStyleType: "none",
+      padding: 0
+    },
+    fullList: {
+      width: 'auto',
+    },
+    listItem: {
+      marginBottom: "15px"
+    },
+    listLink: {
+      background: "transparent",
+      border: "none",
+      color: "black"
+    },
+    filterEntry: {
+      border: "1px solid gray",
+      padding: "3px",
+      margin: "30px 0px 10px",
+      width: "100%"
     }
+  };
+
+  updateQuery = (newQuery) => {
+    // save the new query string in state and pass the string
+    this.setState({ query: newQuery });
+    this.props.filterLocations(newQuery);
+  }
+
+  render = () => {
+    return (
+      <div>
+        <Drawer open={this.props.open} onClose={this.props.toggleDrawer}>
+          <div style={this.styles.list}>
+            <input
+              style={this.styles.filterEntry}
+              type="text"
+              placeholder="Filter list"
+              name="filter"
+              onChange={e => this.updateQuery(e.target.value)}
+              value={this.state.query} />
+            <ul style={this.styles.noBullets}>
+              {this.props.locations && this
+                .props
+                .locations
+                .map((location, index) => {
+                  return (
+                    <li style={this.styles.listItem} key={index}>
+                      <button style={this.styles.listLink} key={index}>
+                      {location.name}
+                      </button>
+                    </li>
+                  )
+                })}
+            </ul>
+          </div>
+        </Drawer>
+      </div>
+    )
+  }
 }
 
-export default Options;
+export default Filter;
