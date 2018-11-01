@@ -7,16 +7,6 @@ class Options extends Component {
         <div className='options-box'>
         <h1>Find Your Morgantown Spot!</h1>
           <div>
-            <input id='show-listings' type='button' value='Show Listings' />
-            <input id='hide-listings' type='button' value='Hide Listings' />
-          </div>
-        <hr />
-          <div>
-            <span className="text"> Draw a shape to search within it for watering holes!</span>
-            <input id="toggle-drawing"  type="button" value="Drawing Tools" />
-          </div>
-        <hr />
-          <div>
             <input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!" />
             <input id="zoom-to-area" type="button" value="Zoom" />
           </div>

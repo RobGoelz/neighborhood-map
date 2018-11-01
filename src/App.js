@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import locations from './data/venues.json'
 import MapDisplay from './components/MapDisplay'
+import Options from './components/Options'
 
 class App extends Component {
   state = {
@@ -14,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>
+        <h1 className="banner">
           Morgantown Spots!
         </h1>
         <MapDisplay

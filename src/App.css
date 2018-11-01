@@ -6,6 +6,13 @@ body {
   padding: 0;
 }
 
+.banner {
+  padding-bottom: 10px;
+  font-size: 30pt;
+  background-color: #0f4d67;
+  color: #b5a265;
+}
+
 .container {
   height: 100%;
   position: relative;
@@ -16,7 +23,7 @@ input {
 }
 
 h1 {
-  color: #525454;
+  color: #b5a265;
   font-size: 22px;
   margin: 0 0 10px 0;
   text-align: center;
@@ -37,8 +44,7 @@ hr {
 #map {
   bottom:0px;
   height: 100%;
-  left: 362px;
-  position: absolute;
+  width: 100%;
   right: 0px;
 }
 
