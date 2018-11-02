@@ -51,6 +51,10 @@ These should be stored in files named apikey.json, and foursquare.json
 
 If you are unfamiliar with this process, please open an issue and I can work with you or provide these files on a limited basis.
 
+#### Production Mode
+This application is made to work offline currently. For details on how to run
+the application in production mode, please see [NPM Run Build](`npm run build`)
+
 ## Contributing
 
 This repository is a fork of the the starter template for the final assessment project for Udacity's React Fundamentals course. Students were provided a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. This code is used by _all_ Udacity students
