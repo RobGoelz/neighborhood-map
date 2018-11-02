@@ -53,7 +53,7 @@ If you are unfamiliar with this process, please open an issue and I can work wit
 
 #### Production Mode
 This application is made to work offline currently. For details on how to run
-the application in production mode, please see [NPM Run Build](#npm-run-build-or-yarn-build)
+the application in production mode, please see [NPM Run Build](#npm-run-build)
 
 ## Contributing
 
