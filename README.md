@@ -51,6 +51,7 @@ I welcome constructive criticism or help to make this program better! For detail
 * [Custom Map Style via JSON](https://stackoverflow.com/questions/34991638/google-map-react-custom-skins)
 * [Storing JSON in const](https://tomchentw.github.io/react-google-maps/#/basics/styled-map?_k=5el6q8)
 * [Calling Custom Styles in google-maps-react](https://github.com/fullstackreact/google-maps-react/issues/28)
+* [Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
 
 ## Contents
 ```bash
