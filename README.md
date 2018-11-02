@@ -53,7 +53,7 @@ If you are unfamiliar with this process, please open an issue and I can work wit
 
 #### Production Mode
 This application is made to work offline currently. For details on how to run
-the application in production mode, please see [NPM Run Build](`npm run build`)
+the application in production mode, please see [NPM Run Build](#npm-run-build-or-yarn-build)
 
 ## Contributing
 
@@ -80,6 +80,7 @@ I welcome constructive criticism or help to make this program better! For detail
 * [Storing JSON in const](https://tomchentw.github.io/react-google-maps/#/basics/styled-map?_k=5el6q8)
 * [Calling Custom Styles in google-maps-react](https://github.com/fullstackreact/google-maps-react/issues/28)
 * [Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
+* [Aria Roles - Search Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Search_role)
 
 ## Contents
 ```bash
