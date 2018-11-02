@@ -45,7 +45,10 @@ class Filter extends Component {
   render = () => {
     return (
       <div>
-        <Drawer open={this.props.open} onClose={this.props.toggleDrawer}>
+        <Drawer open={this.props.open}
+        onClose={this.props.toggleDrawer}
+        role='search'
+        aria-label='search filter'>
           <div style={this.styles.list}>
             <input
               style={this.styles.filterEntry}
