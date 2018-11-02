@@ -27,6 +27,30 @@ The app is running at:
 ```
 Navigating to the localhost URL will allow you to view and interact with the website.
 
+#### Required API Data
+Furthermore, to run this project will require a:
+* Google MAPS API key
+* FourSquare Client/Secret
+
+These should be stored in files named apikey.json, and foursquare.json
+(respectively), and live in /src/data. The following syntax is needed:
+
+**apikey.json:**
+```
+{
+  "key": "YOUR KEY INSIDE THESE QUOTES"
+}
+```
+**foursquare.json**
+```
+{
+  "clientID": "YOUR CLIENT ID INSIDE THESE QUOTES",
+  "clientSecret": "YOUR CLIENT SECRET INSIDE THESE QUOTES"
+}
+```
+
+If you are unfamiliar with this process, please open an issue and I can work with you or provide these files on a limited basis.
+
 ## Contributing
 
 This repository is a fork of the the starter template for the final assessment project for Udacity's React Fundamentals course. Students were provided a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. This code is used by _all_ Udacity students
