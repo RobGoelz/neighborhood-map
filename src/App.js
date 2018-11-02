@@ -67,7 +67,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <button onClick={this.toggleDrawer}
+          <button aria-label="search" onClick={this.toggleDrawer}
           style={this.styles.menuButton}>
             <i className="fa fa-bars"></i>
           </button>
