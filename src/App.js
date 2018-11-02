@@ -9,7 +9,9 @@ class App extends Component {
     lat: 39.629526,
     lon: -79.955897,
     zoom: 13,
-    all: locations
+    all: locations,
+    filtered: null,
+    open: false
   }
 
   styles = {
@@ -56,6 +58,11 @@ class App extends Component {
     return locations.filter(location => location.name.toLowerCase().includes(query.toLowerCase()));
   }
 
+  clickListItem = (index) => {
+    // Set state to reflect selected location
+    this.setState({ selectedIndex: index, open: !this.state.open })
+  }
+
   render = () => {
     return (
       <div className="App">
@@ -72,12 +79,15 @@ class App extends Component {
           lat={this.state.lat}
           lon={this.state.lon}
           zoom={this.state.zoom}
-          locations={this.state.filtered}/>
+          locations={this.state.filtered}
+          selectedIndex={this.state.selectedIndex}
+          clickListItem={this.clickListItem}/>
         <Filter
           locations={this.state.filtered}
           open={this.state.open}
           toggleDrawer={this.toggleDrawer}
-          filterLocations={this.updateQuery}/>
+          filterLocations={this.updateQuery}
+          clickListItem={this.clickListItem}/>
       </div>
     );
   }

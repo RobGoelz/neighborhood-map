@@ -18,7 +18,7 @@ class Filter extends Component {
       padding: 0
     },
     fullList: {
-      width: 'auto',
+      width: 'auto'
     },
     listItem: {
       marginBottom: "15px"
@@ -61,7 +61,9 @@ class Filter extends Component {
                 .map((location, index) => {
                   return (
                     <li style={this.styles.listItem} key={index}>
-                      <button style={this.styles.listLink} key={index}>
+                      <button style={this.styles.listLink}
+                      key={index}
+                      onClick={e => this.props.clickListItem(index)}>
                       {location.name}
                       </button>
                     </li>
