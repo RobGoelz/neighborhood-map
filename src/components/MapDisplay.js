@@ -20,9 +20,6 @@ class MapDisplay extends Component {
     showingInfoWindow: false
   }
 
-  componentDidMount = () => {
-  }
-
   componentWillReceiveProps = (props) => {
     this.setState({firstDrop: false});
 
@@ -93,7 +90,7 @@ class MapDisplay extends Component {
         activeMarkerProps = {
           ...props,
           foursquare: spot[0]
-        };
+        }
 
         // gets the images for the businss from FS data if Available
         // if not, just finish setting state with the data we have
@@ -117,7 +114,9 @@ class MapDisplay extends Component {
           this.setState({showingInfoWindow: true, activeMarker: marker,
           activeMarkerProps});
         }
-      })
+      }).catch(error => {
+      alert("An error occurred trying to fetch data from FourSquare" + error);
+    });
   }
 
   updateMarkers = (locations) => {
@@ -185,10 +184,6 @@ class MapDisplay extends Component {
             onClose={this.closeInfoWindow}>
             <div>
               <h3>{activeMProps && activeMProps.name}</h3>
-              {activeMProps && activeMProps.url
-                ? (
-                  <a href={activeMProps.url}>See website</a>
-                ) : ""}
               {activeMProps && activeMProps.images
                 ? (
                   <div><img
@@ -196,8 +191,12 @@ class MapDisplay extends Component {
                     src={activeMProps.images.items[0].prefix + "100x100" + activeMProps.images.items[0].suffix}/>
                     <p>Image from FourSquare</p>
                   </div>
-                ) : ""
+                ) : <div><p>No image available from FourSquare</p></div>
               }
+              {activeMProps && activeMProps.url
+                ? (
+                  <a href={activeMProps.url}>See website</a>
+                ) : ""}
             </div>
           </InfoWindow>
       </Map>
