@@ -81,6 +81,9 @@ I welcome constructive criticism or help to make this program better! For detail
 * [Calling Custom Styles in google-maps-react](https://github.com/fullstackreact/google-maps-react/issues/28)
 * [Font Awesome Introduction](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
 * [Aria Roles - Search Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Search_role)
+* [Migration to typography 2](https://material-ui.com/style/typography/#migration-to-typography-v2)
+* [Material UI Themes](https://material-ui.com/customization/themes/#typography)
+* [Material MuiThemeProvider](https://material-ui.com/customization/themes/#muithemeprovider)
 
 ## Contents
 ```bash
