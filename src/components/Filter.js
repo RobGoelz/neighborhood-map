@@ -1,5 +1,14 @@
 import React, {Component} from 'react';
 import Drawer from '@material-ui/core/Drawer'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    htmlFontSize: 14,
+    useNextVariants: true
+  }
+});
+
 
 class Filter extends Component {
 
@@ -45,6 +54,7 @@ class Filter extends Component {
   render = () => {
     return (
       <div>
+      <MuiThemeProvider theme={theme}>
         <Drawer open={this.props.open}
         onClose={this.props.toggleDrawer}
         role='search'
@@ -75,6 +85,7 @@ class Filter extends Component {
             </ul>
           </div>
         </Drawer>
+        </MuiThemeProvider>
       </div>
     )
   }
